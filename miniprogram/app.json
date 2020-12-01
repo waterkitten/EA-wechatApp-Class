@@ -21,7 +21,7 @@
       },
       {
         "pagePath": "pages/SecPage/index",
-        "text": "第二",
+        "text": "AJAX请求",
         "iconPath": "img/store.png",
         "selectedIconPath": "img/time.png"
       }

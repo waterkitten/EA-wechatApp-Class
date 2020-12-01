@@ -58,6 +58,11 @@
           "pathName": "pages/swiperListPage/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "ajax请求",
+          "pathName": "pages/SecPage/index",
+          "scene": null
         }
       ]
     }

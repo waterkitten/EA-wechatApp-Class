@@ -5,14 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    docsData:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.request({
+      url: 'https://api.szuea.com/documents/',
+      success:(e)=>{
+        console.log(e);
+        var docsData=e.data.results
+        this.setData({
+          docsData
+        })
+      }
+    })
   },
 
   /**

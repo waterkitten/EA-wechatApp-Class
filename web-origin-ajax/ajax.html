@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>原生Ajax测试</title>
+    <script type="text/javascript">
+      function getTime() {
+        //1.创建ajax对象
+        var xhr = new XMLHttpRequest()
+        //2.准备请求（请求类型，后端地址）：此处请求并没有传数据出去，只是发送了一个请求
+        xhr.open('get', 'https://api.szuea.com/documents/')
+        //3.监听ajax的状态变化
+        xhr.onreadystatechange = function () {
+          if (xhr.status == 200 && xhr.readyState == 4) {
+            var result = xhr.responseText
+            //放到相应的位置
+            document.getElementById('time').innerHTML = result
+          }
+        }
+        //4.发送请求
+        xhr.send()
+      }
+    </script>
+  </head>
+
+  <body>
+    <button onclick="getTime()">得到时间</button><span id="time"></span>
+  </body>
+</html>

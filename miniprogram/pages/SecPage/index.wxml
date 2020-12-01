@@ -1,2 +1,20 @@
-<!--miniprogram/pages/EAdemos/SecPage/index.wxml-->
-<text>miniprogram/pages/EAdemos/SecPage/index.wxml</text>
+<view wx:for="{{docsData}}" wx:key="item" data-index="{{item.id}}">
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <view class="title">
+      <view class="text-cut">{{item.creat_time}}</view>
+    </view>
+    <view class="content">
+      <image wx:if="{{item.id%2==0}}" src="../../img/SZUEA.jpg" mode="aspectFill"></image>
+      <image wx:else src="../../img/szu-emo.jpg" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content"> {{item.title}}</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">{{item.category}}</view>
+          <view class="cu-tag bg-green light sm round">{{item.doc_id}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+</view>

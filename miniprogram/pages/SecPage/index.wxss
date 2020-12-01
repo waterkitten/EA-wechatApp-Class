@@ -1,1 +1,2 @@
-/* miniprogram/pages/EAdemos/SecPage/index.wxss */
+@import "../../style/colorUI/main.wxss";
+@import "../../style/colorUI/icon.wxss";
