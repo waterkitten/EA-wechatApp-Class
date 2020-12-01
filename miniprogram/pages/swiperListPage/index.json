@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "swiperList":"../../components/swiperList/index",
+    "card":"../../components/card/card"
+}}

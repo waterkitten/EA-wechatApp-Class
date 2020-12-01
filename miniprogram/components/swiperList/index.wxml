@@ -1,0 +1,9 @@
+<view class='swiperBanner'>
+  <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' circular='{{circular}}'>
+    <swiper-item wx:for="{{imgUrls}}" wx:key='index'>
+      <navigator url='{{item.link}}'>
+        <image src="{{item.url}}" class="slide-image" mode="aspectFill"></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>

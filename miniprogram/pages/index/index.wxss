@@ -1,0 +1,10 @@
+@import '/style/icon/index.wxss';
+.img{
+  width: 240rpx;
+}
+.imachange{
+  width: 100%;
+}
+swiper{
+  height: 600rpx;
+}

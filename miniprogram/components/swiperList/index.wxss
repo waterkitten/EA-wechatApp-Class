@@ -1,0 +1,16 @@
+.swiperBanner {
+  width: 94%;
+  margin: 0 auto;
+}
+
+.swiperBanner image {
+  border-radius: 1%;
+  width: 100%;
+  height: 300rpx !important;
+}
+
+.swiper {
+  border-radius: 1%;
+  width: 100%;
+  height: 300rpx !important;
+}

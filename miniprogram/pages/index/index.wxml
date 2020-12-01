@@ -1,0 +1,12 @@
+<text class="iconfont icon-001-cangku"></text>
+<!-- inconfont的迎入方式 -->
+<image class="{{finishLoad?'imgchange':'img'}}" src="../../img/szu.png" bindload="imageload"></image>
+
+<!-- 轮播图 -->
+<swiper class="imgchange"  indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{swiperList}}" wx:key="*this">
+    <swiper-item>
+     <image class="imgchange" src="{{item}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
