@@ -2,7 +2,7 @@
   "miniprogramRoot": "miniprogram/",
   "cloudfunctionRoot": "cloudfunctions/",
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": true,
     "enhance": true,
     "postcss": true,
@@ -27,14 +27,14 @@
       "outputPath": ""
     },
     "enableEngineNative": false,
+    "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
     "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
-    "minifyWXSS": true,
-    "bundle": false
+    "minifyWXSS": true
   },
   "appid": "wxe40959ae56a7332c",
   "projectname": "%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9",
@@ -62,6 +62,13 @@
         {
           "name": "ajax请求",
           "pathName": "pages/SecPage/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "find",
+          "pathName": "pages/find/find",
+          "query": "",
           "scene": null
         }
       ]
