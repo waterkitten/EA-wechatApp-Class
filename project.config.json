@@ -70,6 +70,12 @@
           "pathName": "pages/find/find",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "test",
+          "pathName": "pages/test/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

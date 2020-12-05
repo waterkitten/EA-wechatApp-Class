@@ -1,39 +1,18 @@
-// miniprogram/pages/EAdemos/index/index.js
+// miniprogram/pages/test/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    finishLoad: false,
-    swiperList:[
-      'https://737a-szuea-prod-rs90e-1300866734.tcb.qcloud.la/swiper/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20201012205337.png?sign=f49efadc6a342621ad061f5f034f89b2&t=1606751784','../../img/jyjj.jpg','../../img/zhgg.jpg'],
-  },
-  imageload(e) {
-    console.log(e);
-
-    wx.showToast({
-      title: '加载完成了',
-      icon: "loading"
-    })
-    this.setData({
-      finishLoad: !this.data.finishLoad
-    })
-
+    hello:"111"
   },
 
-
-
-
-
-
-
-  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(hello);
   },
 
   /**
